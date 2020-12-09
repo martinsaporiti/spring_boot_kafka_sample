@@ -1,6 +1,5 @@
 package kafka.sample;
 
-import com.google.gson.Gson;
 import kafka.sample.model.Model;
 import kafka.sample.service.KafkaProducerService;
 import org.junit.jupiter.api.Test;
