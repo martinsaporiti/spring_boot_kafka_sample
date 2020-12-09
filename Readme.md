@@ -16,4 +16,27 @@ producer.topic=myTopic
 consumer.topics=myTopic
 ```
 
+## Testing
+We can test running the app:
+
+```
+./mvnw spring-boot:run
+```
+
+Next, we can send messages to API:
+
+```
+curl --location --request POST 'localhost:8080/api/kafka/' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "field1": "test 1",
+    "field2": "test 2"
+}'
+```
+
+Now, if we can view in the terminal the messages, all work fine:
+
+```bash
+Receiving message: Model{field1='test 1', field2='test 2'}
+```
 

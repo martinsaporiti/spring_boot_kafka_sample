@@ -10,7 +10,9 @@ import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;
 
 /**
+ * This class implements the Kafka Consumer (@KafkaListener) from specific topic.
  * @author martinsaporiti
+ *
  */
 @Service
 public class KafkaConsumerService {

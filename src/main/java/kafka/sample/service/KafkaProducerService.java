@@ -13,6 +13,7 @@ import org.springframework.util.concurrent.ListenableFuture;
 import org.springframework.util.concurrent.ListenableFutureCallback;
 
 /**
+ * This class implements a Kafka Producer
  * @author martinsaporiti
  */
 @Service
@@ -32,6 +33,10 @@ public class KafkaProducerService {
         this.jsonConverter = jsonConverter;
     }
 
+    /**
+     * Publish de model in the topic.
+     * @param model
+     */
     public void send(Model model){
         logger.info(String.format("Sending message: %s", model));
         ListenableFuture<SendResult<String, String>> future =
