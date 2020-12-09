@@ -34,8 +34,7 @@ curl --location --request POST 'localhost:8080/api/kafka/' \
 }'
 ```
 
-Now, if we can view in the terminal the messages, all work fine:
-
+Now, if we can view in the terminal the messages, the app has worked fine:
 ```bash
 Receiving message: Model{field1='test 1', field2='test 2'}
 ```
